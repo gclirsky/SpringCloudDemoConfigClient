@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Cafe Home</title>
+</head>
+<body>
+	<div>
+		<h1>Cafe Room serve you best coffee</h1>
+		<p
+			th:text="'Welcome to ' + ${name} + '. You are served by good price ' + ${price} + ' and the encrypted value is ' + ${connstring} + '.'" />
+
+		<p
+			th:text="'Our service time is from ' + ${opentime} + ' to ' + ${closetime} + '.'" />
+	</div>
+</body>
+</html>
